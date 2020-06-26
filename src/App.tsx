@@ -1,26 +1,23 @@
-import React from 'react'
-import logo from './logo.svg'
+import React, { useState } from 'react'
 import './App.css'
+import ParentComponent from './ParentComponent'
 
 function App() {
+  const [state, setState] = useState(0)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="root-element">
+      <header className="header">
+        <span className="appstate">App State: {state}</span> <h1 className="title">Code Piece of Complete Guide to React Rendering Behavior</h1>
       </header>
+      <main className="contents">
+        <div>
+          <button onClick={() => setState(state + 1)}>Update App Compoment's State</button>
+        </div>
+        <ParentComponent/>
+      </main>
     </div>
-  )
+)
 }
 
 export default App
