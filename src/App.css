@@ -1,9 +1,9 @@
-.root-element {
+div.root-element {
   height: 100%;
   width: 100%;
 }
 
-.header {
+header {
   background-color: #282c34;
   min-height: 50px;
   display: flex;
@@ -25,7 +25,23 @@
 
 }
 
-.contents {
+main {
   min-height: cacl(100% - 50px);
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.How_New_Props_References_Affect_Render_Optimizations {
+  color: #ffffff;
+  background-color: coral;
+  width: 70%;
+  padding:15px;
+  display: flex;
+  justify-content: center;
+}
+
+section.How_New_Props_References_Affect_Render_Optimizations > .container {
+    min-width: 60%;
 }
