@@ -2,7 +2,7 @@
   "name": "code-piece-of-complete-guide-to-react-rendering-behavior",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^12.1.3",
     "@types/jest": "^26.0.12",
