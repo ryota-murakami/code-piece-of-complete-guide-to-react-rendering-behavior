@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import React, { ReactElement, useState } from 'react'
 import './App.css'
 import ParentComponent from './ParentComponent'
 
-function App() {
+function App(): ReactElement {
   const [state, setState] = useState(0)
 
   return (

@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { ReactElement } from 'react'
 import NormalChildComponent from './NormalChildComponent'
 
-function ParentComponent() {
+function ParentComponent(): ReactElement {
   const onClick = () => {
     // eslint-disable-next-line no-console
     console.log('Button clicked')
